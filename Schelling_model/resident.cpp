@@ -3,9 +3,9 @@
 
 Resident::Resident(Race race, bool isOccupied) : occupied(isOccupied), race(race) {
     switch (race) {
-    case NONE:
-        icon = QIcon();  // 空的QIcon
-        break;
+    // case NONE:
+    //     icon = QIcon();  // 空的QIcon
+    //     break;
     case Race1:
         icon = QIcon("C:/Users/sheng/Desktop/red.png");
         break;
@@ -43,5 +43,5 @@ bool Resident::isSatisfied(const City& city, int x, int y, int threshold) const 
         }
     }
     //return sameRace >= threshold * total;
-    return total >= threshold * sameRace;
+    return total <= threshold * sameRace;
 }

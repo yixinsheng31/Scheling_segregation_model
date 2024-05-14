@@ -5,10 +5,8 @@
 class City;
 class Resident {
 public:
-    enum Race { NONE, Race1, Race2 };
-
-    Resident(Race race = NONE, bool isOccupied = false);
-
+    enum Race {Race1, Race2};
+    Resident(Race race = Race1, bool isOccupied = false);
     QIcon getIcon() const;
     bool isOccupied() const;
     Race getRace() const;
@@ -21,3 +19,5 @@ private:
 };
 
 #endif // RESIDENT_H
+//enum Race {NONE, Race1, Race2 };
+ //Resident(Race race = NONE, bool isOccupied = false);
