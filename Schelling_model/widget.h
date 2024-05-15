@@ -7,7 +7,6 @@
 #include <QMainWindow>
 #include <QGraphicsScene>
 
-
 QT_BEGIN_NAMESPACE
 namespace Ui { class Widget; }
 QT_END_NAMESPACE
@@ -51,7 +50,7 @@ public:
     void updateCityView();
 };
 
-#endif // MAINWINDOW_H
+#endif // WIDGET_H
 
 
 

@@ -24,6 +24,7 @@ Widget::Widget(QWidget *parent)
     ui->resetButton->hide();
     ui->cityView->hide();
     ui->raceComboBox->hide();
+    ui->platebutton->hide();
     //ui->widthSpinBox->hide();
     //ui->heightSpinBox_2->hide();
 }
@@ -43,6 +44,7 @@ void Widget::start()
     ui->resetButton->show();
     ui->cityView->show();
     ui->raceComboBox->show();
+    ui->platebutton->show();
     //ui->widthSpinBox->show();
     //ui->heightSpinBox_2->show();
     ui->startButton->hide();
